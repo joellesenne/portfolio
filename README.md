@@ -78,8 +78,7 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2023 [Joël Lesenne](https://github.com/joellesenne). <br />
 This project is [MIT](LICENSE) licensed.
+
 ## Acknowledgments
 
--   Hat tip to anyone whose code was used.
--   Inspiration.
--   etc.
+-   [Navigation PageDesign](https://codepen.io/Saramazal/pen/LYyywNb)
