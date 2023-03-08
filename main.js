@@ -2,8 +2,7 @@ import './style.css'
 import Particle from "./particles.js"
 import NavigationPage from "./NavigationPage.js";
 
-
-
+"use strict";
 
 window.onload = function () {
     const App = document.querySelector('#app')
