@@ -1,5 +1,7 @@
 import Particles from "particlesjs"
 
+"use strict";
+
 const Particle = () => {
     Particles.init({
         selector: ".background",

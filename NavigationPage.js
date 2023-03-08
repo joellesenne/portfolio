@@ -1,5 +1,6 @@
 import $ from "jquery";
 
+"use strict";
 
 class NavigationPage {
     constructor() {
@@ -35,38 +36,41 @@ class NavigationPage {
 
     checkHeaderPosition() {
         const headerHeight = 75;
+        const header = $(".header");
+        const nav = $(".nav");
         if ($(window).scrollTop() > headerHeight) {
-            $(".nav").addClass("nav-scrolled");
+            nav.addClass("nav-scrolled");
         } else {
-            $(".nav").removeClass("nav-scrolled");
+            nav.removeClass("nav-scrolled");
         }
+
         let offset =
-            $(".header").offset().top +
-            $(".header").height() -
+            header.offset().top +
+            header.height() -
             this.tabContainerHeight -
             headerHeight;
         if (
             $(window).scrollTop() > this.lastScroll &&
             $(window).scrollTop() > offset
         ) {
-            $(".nav").addClass("nav-move-up");
-            $(".nav").removeClass("nav-top-first");
-            $(".nav").addClass("nav-top-second");
+            nav.addClass("nav-move-up");
+            nav.removeClass("nav-top-first");
+            nav.addClass("nav-top-second");
         } else if (
             $(window).scrollTop() < this.lastScroll &&
             $(window).scrollTop() > offset
         ) {
-            $(".nav").removeClass("nav-move-up");
-            $(".nav").removeClass("nav-top-second");
-            $(".nav").addClass("nav-top-first");
+            nav.removeClass("nav-move-up");
+            nav.removeClass("nav-top-second");
+            nav.addClass("nav-top-first");
         } else {
-            $(".nav").removeClass("nav-move-up");
-            $(".nav").removeClass("nav-top-first");
-            $(".nav").removeClass("nav-top-second");
+            nav.removeClass("nav-move-up");
+            nav.removeClass("nav-top-first");
+            nav.removeClass("nav-top-second");
         }
     }
 
-    findCurrentTabSelector(element) {
+    findCurrentTabSelector() {
         let newCurrentId;
         let newCurrentTab;
         let self = this;
@@ -83,7 +87,7 @@ class NavigationPage {
                 newCurrentTab = $(this);
             }
         });
-        if (this.currentId != newCurrentId || this.currentId === null) {
+        if (this.currentId !== newCurrentId || this.currentId === null) {
             this.currentId = newCurrentId;
             this.currentTab = newCurrentTab;
             this.setSliderCss();
@@ -91,14 +95,15 @@ class NavigationPage {
     }
 
     setSliderCss() {
+        const navTabSlider = $(".nav-tab-slider");
         let width = 0;
         let left = 0;
         if (this.currentTab) {
             width = this.currentTab.css("width");
             left = this.currentTab.offset().left;
         }
-        $(".nav-tab-slider").css("width", width);
-        $(".nav-tab-slider").css("left", left);
+        navTabSlider.css("width", width);
+        navTabSlider.css("left", left);
     }
 }
 
