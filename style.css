@@ -37,10 +37,12 @@ h2 {
   font-family: "Josefin Sans", sans-serif;
   padding-bottom: 0.5rem;
   font-size: 5vw;
+  letter-spacing: 0.5rem;
 }
 
 p {
-  letter-spacing: 0.1rem;
+  font-size: 3vw;
+  letter-spacing: .4vw;
   font-weight: 300;
   z-index: 4;
 }
@@ -73,7 +75,6 @@ button {
 .header-title,
 .slider-title {
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
   color: var(--color02);
   transition: all 0.3s ease;
   z-index: 3;
@@ -85,7 +86,7 @@ button {
 }
 
 .slider-link {
-  font-size: 2vw;
+  font-size: 3vw;
   font-weight: 300;
   letter-spacing: 0.2rem;
   color: var(--color02);
@@ -132,7 +133,7 @@ button {
   justify-content: center;
   align-items: center;
   flex: 1;
-  font-size: 2vw;
+  font-size: 3vw;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: var(--color02);
@@ -163,34 +164,21 @@ button {
   right: 0;
   z-index: auto;
 }
-@media (min-width: 800px) {
+
+@media only screen and (min-width: 768px) {
   h1,
   h2 {
     font-size: 8vw;
   }
 
   p {
-    font-size: 3vw;
-  }
-
-  .nav-tab {
-    font-size: 3vw;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  h1,
-  h2 {
-    font-size: 8vw;
-  }
-
-  p {
-    font-size: 3vw;
+    font-size: 4vw;
     letter-spacing: 0.2vw;
   }
 
-  .nav-tab {
-    font-size: 1.2vw;
+  .nav-tab,
+  .slider-link {
+    font-size: 2vw;
   }
 }
 .background {
