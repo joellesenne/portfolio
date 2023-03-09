@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-This project requires [node](https://nodejs.org), [npm](https://npmjs.com) and [jQuery](https://jquery.com/). Go check them out if you don't have them locally installed.
+This project requires [node](https://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
 
 You can learn more in the [Guide](https://vitejs.dev/guide/).
 
@@ -82,5 +82,8 @@ This project is [MIT](LICENSE) licensed.
 ## Acknowledgments
 
 - [Navigation PageDesign](https://codepen.io/Saramazal/pen/LYyywNb)
+- [Sticky slider nav](https://codepen.io/RicBocad/pen/XWzNyqP)
 - [Ettrics](https://codepen.io/ettrics)
 - [Particles.js](https://particles.js.org/)
+- [Fancy border radius](https://github.com/9elements/fancy-border-radius)
+- [Min max calculator](https://github.com/9elements/min-max-calculator)

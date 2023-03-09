@@ -1,12 +1,10 @@
 lockfileVersion: 5.4
 
 specifiers:
-  jquery: ^3.6.3
   particlesjs: ^2.2.3
   vite: ^4.1.0
 
 dependencies:
-  jquery: 3.6.3
   particlesjs: 2.2.3
 
 devDependencies:
@@ -266,10 +264,6 @@ packages:
     dependencies:
       has: 1.0.3
     dev: true
-
-  /jquery/3.6.3:
-    resolution: {integrity: sha512-bZ5Sy3YzKo9Fyc8wH2iIQK4JImJ6R0GWI9kL1/k7Z91ZBNgkRXE6U0JfHIizZbort8ZunhSI3jw9I6253ahKfg==}
-    dev: false
 
   /nanoid/3.3.4:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
