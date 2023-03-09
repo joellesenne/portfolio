@@ -25,6 +25,7 @@
 
 html {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -33,7 +34,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Josefin Sans", sans-serif;
   padding-bottom: 0.5rem;
   font-size: 5vw;
@@ -41,7 +43,8 @@ h2 {
 }
 
 p {
-  font-size: 3vw;
+  font-size: clamp(1.5rem, 0.167rem + 6.67vw, 3.5rem);
+  line-height: 1.4;
   letter-spacing: .4vw;
   font-weight: 300;
   z-index: 4;
@@ -49,17 +52,19 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--color02);
 }
 
 button {
   margin-top: 2.5rem;
-  padding: 0.8rem 1rem;
+  padding: 1.2rem;
   border: none;
   text-transform: none;
   -webkit-appearance: button;
 }
 
 .header,
+.footer,
 .slider {
   display: flex;
   flex-direction: column;
@@ -91,7 +96,7 @@ button {
   letter-spacing: 0.2rem;
   color: var(--color02);
   background-color: var(--color01);
-  border-radius: 8px;
+  border-radius: 34% 66% 61% 39% / 23% 37% 63% 77%  ;
   box-shadow: var(--box-shadow);
   cursor: pointer;
   transform: scale(1);
@@ -111,23 +116,18 @@ button {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 75px;
+  height: 50px;
   box-shadow: var(--box-shadow);
   background: var(--color01);
   z-index: 10;
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.nav-top-first {
+.nav-sticky {
   position: fixed;
   top: 0;
-  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.nav-top-second {
-  position: fixed;
-  top: 0;
-}
 .nav-tab {
   display: flex;
   justify-content: center;
@@ -146,14 +146,17 @@ button {
   font-weight: 400;
   background: var(--color02);
 }
-
 .nav-tab-slider {
+  position: relative;
+}
+.nav-tab-slider:before {
+  content: '';
   position: absolute;
   bottom: 0;
-  width: 0;
+  width: 100%;
   height: 2px;
-  background: #03dac6;
-  transition: left 0.3s ease;
+  background: var(--color02);
+  transition: all 0.3s ease;
 }
 .background {
   position: absolute;
@@ -172,10 +175,12 @@ button {
   }
 
   p {
-    font-size: 4vw;
     letter-spacing: 0.2vw;
   }
 
+  .nav {
+    height: 75px;
+  }
   .nav-tab,
   .slider-link {
     font-size: 2vw;
