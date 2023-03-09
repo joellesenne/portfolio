@@ -5,9 +5,8 @@ const StickySliderNav = () => {
     const navTabs = document.querySelectorAll('.js-nav-tab');
     const slider = document.querySelectorAll('.js-slider');
     const sticky = navSticky.offsetTop;
-    window.onscroll = () => {
-        NavSticky()
-    }
+
+    window.addEventListener('scroll', () => NavSticky());
 
     const NavSticky = () => {
         if (window.scrollY >= sticky) {
@@ -19,15 +18,12 @@ const StickySliderNav = () => {
         const changeLinkState = () => {
             let index = slider.length;
 
-            while(--index && window.scrollY + 50 < slider[index].offsetTop) {}
+            while(index-- && window.scrollY + 50 < slider[index].offsetTop) {}
 
             navTabs.forEach((navTab) => navTab.classList.remove('nav-tab-slider'));
             navTabs[index].classList.add('nav-tab-slider');
-
-            //console.log(index)
         }
-
-        window.addEventListener('scroll', changeLinkState);
+        changeLinkState()
     }
 
 
