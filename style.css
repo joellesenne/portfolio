@@ -34,16 +34,15 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: "Josefin Sans", sans-serif;
   padding-bottom: 0.5rem;
-  font-size: 5vw;
+  font-size: clamp(1.5rem, 0.167rem + 6.67vw, 3.5rem);;
   letter-spacing: 0.5rem;
 }
 
 p {
-  font-size: clamp(1.5rem, 0.167rem + 6.67vw, 3.5rem);
+  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
   line-height: 1.4;
   letter-spacing: .4vw;
   font-weight: 300;
@@ -158,6 +157,11 @@ button {
   background: var(--color02);
   transition: all 0.3s ease;
 }
+
+.footer h3 {
+  font-size: 2vw;
+  letter-spacing: 0.1rem;
+}
 .background {
   position: absolute;
   height: 90vh;
@@ -175,6 +179,7 @@ button {
   }
 
   p {
+    font-size: 5vw;
     letter-spacing: 0.2vw;
   }
 
@@ -186,6 +191,7 @@ button {
     font-size: 2vw;
   }
 }
+
 .background {
   position: absolute;
   height: 100vh;
