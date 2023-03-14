@@ -58,7 +58,7 @@ window.onload = function () {
                 <button class="slider-link" type="submit">CV Resume</button>
             </form>
           </section>
-          <footer class="footer"><h3>© 2019-${new Date().getFullYear()} - All rights reserved <br> <a href="/">Joël Lesenne</a> <br> <a href="#" id="open_preferences_center">Cookies preferences</a>
+          <footer class="footer"><h3>© 2019-${new Date().getFullYear()} - All rights reserved <br> <a href="/">Joël Lesenne</a>
 </h3></footer>
         </main>
         <canvas class="background"></canvas>
