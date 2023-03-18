@@ -87,3 +87,5 @@ This project is [MIT](LICENSE) licensed.
 - [Particles.js](https://particles.js.org/)
 - [Fancy border radius](https://github.com/9elements/fancy-border-radius)
 - [Min max calculator](https://github.com/9elements/min-max-calculator)
+- [CSS Glitched Text](https://codepen.io/lbebber/pen/nqwBKK)
+- [https://realfavicongenerator.net/](https://realfavicongenerator.net/)
