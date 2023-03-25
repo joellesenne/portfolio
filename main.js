@@ -1,6 +1,7 @@
 import './style.css'
 import Particle from "./particles.js"
 import StickySliderNav from "./StickySliderNav.js";
+import ScrollToTop from "./SrollToTop.js";
 
 "use strict";
 
@@ -60,11 +61,15 @@ window.onload = function () {
           </section>
           <footer class="footer"><h3>© 2019-${new Date().getFullYear()} - All rights reserved <br> <a href="/">Joël Lesenne</a>
 </h3></footer>
+<a id="js-top" class="scroll-top hide" href="#home" title="Top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+</a>
         </main>
         <canvas class="background"></canvas>
     `;
     Particle();
     StickySliderNav();
+    ScrollToTop()
 };
 
 

@@ -219,6 +219,25 @@ button {
     color: var(--color03);
   }
 }
+
+.scroll-top {
+  position: fixed;
+  width: 30px;
+  height: 40px;
+  right: 30px;
+  bottom: 150px;
+}
+
+.scroll-top.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-top.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .background {
   position: absolute;
   height: 100vh;
