@@ -4,7 +4,7 @@ import Particles from "particlesjs"
 
 const Particle = () => {
     Particles.init({
-        selector: ".background",
+        selector: ".page-background",
         color: ["#03dac6", "#ff0266", "#000000"],
         connectParticles: true,
         responsive: [
@@ -18,6 +18,6 @@ const Particle = () => {
             }
         ]
     });
-}
+};
 
 export default Particle

@@ -25,9 +25,6 @@ const StickySliderNav = () => {
         }
         changeLinkState()
     }
-
-
-
 }
 
 export default StickySliderNav

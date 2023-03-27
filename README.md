@@ -88,4 +88,5 @@ This project is [MIT](LICENSE) licensed.
 - [Fancy border radius](https://github.com/9elements/fancy-border-radius)
 - [Min max calculator](https://github.com/9elements/min-max-calculator)
 - [CSS Glitched Text](https://codepen.io/lbebber/pen/nqwBKK)
-- [https://realfavicongenerator.net/](https://realfavicongenerator.net/)
+- [CSS Dark Theme Toggle](https://codepen.io/probablykasper/pen/JjrYmqx?editors=1010)
+- [Real favicon generator](https://realfavicongenerator.net/)

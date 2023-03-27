@@ -6,8 +6,9 @@ const ScrollToTop = () => {
     window.addEventListener('scroll', () => {
         let y = window.scrollY;
 
-        scrollTopButton.className = (y > 1000) ? 'scroll-top show' : 'scroll-top hide';
+        scrollTopButton.classList.toggle('show', y > 1000);
+        scrollTopButton.classList.toggle('hide', y <= 1000);
     });
 }
 
-export default ScrollToTop
+export default ScrollToTop;
