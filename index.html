@@ -2,76 +2,100 @@
 <html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Primary Meta Tags -->
     <title>Joël Lesenne</title>
-    <meta name="title" content="Joël Lesenne">
-    <meta name="description" content="Creative Web Developer">
-    <meta name="keywords" content="Portfolio, Web developer">
+    <meta name="title" content="Joël Lesenne" />
+    <meta name="description" content="Creative Web Developer" />
+    <meta name="keywords" content="Portfolio, Web developer" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://joellesenne.dev">
-    <meta property="og:title" content="Joël Lesenne">
-    <meta property="og:description" content="Creative Web Developer">
-    <meta property="og:image" content="capture-image-meta.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://joellesenne.dev" />
+    <meta property="og:title" content="Joël Lesenne" />
+    <meta property="og:description" content="Creative Web Developer" />
+    <meta property="og:image" content="capture-image-meta.png" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://joellesenne.dev">
-    <meta property="twitter:title" content="Joël Lesenne">
-    <meta property="twitter:description" content="Creative Web Developer">
-    <meta property="twitter:image" content="capture-image-meta.png">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://joellesenne.dev" />
+    <meta property="twitter:title" content="Joël Lesenne" />
+    <meta property="twitter:description" content="Creative Web Developer" />
+    <meta property="twitter:image" content="capture-image-meta.png" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="canonical" href="https://joellesenne.dev" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Raleway:wght@100;200;300;400;500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Raleway:wght@100;200;300;400;500&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Define the theme of a web page according to the user's preferences and browser settings -->
     <script>
       const detectTheme = () => {
-        const themeOverride = localStorage.getItem('theme') ;
+        const themeOverride = localStorage.getItem('theme');
         if (['dark', 'light'].includes(themeOverride)) {
           return themeOverride;
         }
 
-        return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        return window.matchMedia('(prefers-color-scheme: light)').matches
+          ? 'light'
+          : 'dark';
       };
 
       document.documentElement.setAttribute('data-theme', detectTheme());
     </script>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDBGYX8YK6"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PDBGYX8YK6"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'G-PDBGYX8YK6');
     </script>
   </head>
   <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <main id="app"></main>
     <script type="module" src="/src/main.js" defer></script>
 
     <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-    <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+    <script
+      type="text/javascript"
+      src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js"
+      charset="UTF-8"
+    ></script>
     <script type="text/javascript" charset="UTF-8">
       document.addEventListener('DOMContentLoaded', function () {
-        cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Joël Lesenne"});
+        cookieconsent.run({
+          notice_banner_type: 'simple',
+          consent_type: 'express',
+          palette: 'dark',
+          language: 'en',
+          page_load_consent_levels: ['strictly-necessary'],
+          notice_banner_reject_button_hide: false,
+          preferences_center_close_button_hide: false,
+          page_refresh_confirmation_buttons: false,
+          website_name: 'Joël Lesenne',
+        });
       });
     </script>
-  <!-- <a href="#" id="open_preferences_center">Cookies preferences</a> -->
+    <!-- <a href="#" id="open_preferences_center">Cookies preferences</a> -->
   </body>
 </html>
