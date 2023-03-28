@@ -5,6 +5,7 @@ When contributing to this repository, please first discuss the change you wish t
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
 First fork this project :
+
 ```bash
 
 - git clone <https://github.com/joellesenne/portfolio.git>
@@ -16,6 +17,7 @@ First fork this project :
 ```
 
 Fix some code :
+
 ```bash
 
 - git commit -m "added this feature"

@@ -40,16 +40,19 @@ npm start
 => browse to [http://localhost:5173/](http://localhost:5173/)
 
 🎉 have fun
+
 ## Deployment
 
 Add additional notes about how to deploy this on a live system.
 
 ## Built With
 
--   [Vite](https://vitejs.dev/) - Builder used
+- [Vite](https://vitejs.dev/) - Builder used
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
 ## Authors
 
 👤 **Joël Lesenne**
