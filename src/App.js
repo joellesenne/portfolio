@@ -1,8 +1,8 @@
-"use strict"
+'use strict';
 
 const App = () => {
-    const App = document.querySelector('#app');
-    App.innerHTML = `
+  const App = document.querySelector('#app');
+  App.innerHTML = `
         <header id="home" class="header js-slider">
             <h1 class="header-title glitch-text" data-text="Joël Lesenne">Joël Lesenne</h1>
             <p>Creative Web Developer</p>
@@ -56,7 +56,7 @@ const App = () => {
             </section>
         </article>
         <footer class="footer">
-            <h3>© 2019-${new Date().getFullYear()} - All rights reserved <br> <a href="/">Joël Lesenne</a></h3>
+            <h3>© 2019-${new Date().getFullYear()} - All rights reserved <br> <a href="/public">Joël Lesenne</a></h3>
             <button id="toggleDarkMode" type="button" class="slider-link">light mode</button>
         </footer>
         <a id="js-top" class="scroll-top hide" href="#home" title="Top">
@@ -64,6 +64,6 @@ const App = () => {
         </a>
         <canvas class="page-background"></canvas>
     `;
-}
+};
 
-export default App
+export default App;
