@@ -34,7 +34,7 @@ yarn install
 ## Usage
 
 ```sh
-npm start
+npm run dev
 ```
 
 => browse to [http://localhost:5173/](http://localhost:5173/)
