@@ -22,8 +22,8 @@ const StickySliderNav = () => {
         //console.log(index)
       }
 
-      navTabs.forEach((navTab) => navTab.classList.remove('nav-tab-slider'));
-      navTabs[index].classList.add('nav-tab-slider');
+      navTabs.forEach((navTab) => navTab.classList.remove('nav-tab-active'));
+      navTabs[index].classList.add('nav-tab-active');
     };
     changeLinkState();
   };

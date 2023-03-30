@@ -34,6 +34,7 @@ html[data-theme='light'] {
 html {
   box-sizing: inherit;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -83,6 +84,10 @@ button {
   position: relative;
   text-align: center;
   padding: 0 2em;
+}
+
+.scroll-snap {
+  scroll-snap-align: start;
 }
 
 .header-title,
@@ -154,10 +159,10 @@ button {
   font-weight: 400;
   background: var(--color02);
 }
-.nav-tab-slider {
+.nav-tab-active {
   position: relative;
 }
-.nav-tab-slider:before {
+.nav-tab-active:before {
   content: '';
   position: absolute;
   bottom: 0;
