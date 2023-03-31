@@ -92,4 +92,5 @@ This project is [MIT](LICENSE) licensed.
 - [Min max calculator](https://github.com/9elements/min-max-calculator)
 - [CSS Glitched Text](https://codepen.io/lbebber/pen/nqwBKK)
 - [CSS Dark Theme Toggle](https://codepen.io/probablykasper/pen/JjrYmqx?editors=1010)
+- [Practical CSS scroll snapping](https://css-tricks.com/practical-css-scroll-snapping/)
 - [Real favicon generator](https://realfavicongenerator.net/)
