@@ -19,7 +19,7 @@ const App = () => {
             <section id="project" class="slider scroll-snap js-slider">
                 <h2 class="slider-title glitch-text" data-text="Projects">Projects</h2>
                 <p>A concentrate of projects carried out</p>
-                <form action="https://github.com/joellesenne" method="get" target="_blank">
+                <form action="https://projects.joellesenne.dev" method="get" target="_blank">
                     <button class="slider-link blob-animation" type="submit">see more my projects</button>
                 </form>
             </section>
