@@ -1,14 +1,10 @@
-'use strict';
-
 const StickySliderNav = () => {
   const navSticky = document.getElementById('js-nav-sticky');
   const navTabs = document.querySelectorAll('.js-nav-tab');
-  const slider = document.querySelectorAll('.js-slider');
+  const sliders = document.querySelectorAll('.js-slider');
   const sticky = navSticky.offsetTop;
 
-  window.addEventListener('scroll', () => NavSticky());
-
-  const NavSticky = () => {
+  const navStickyHandler = () => {
     if (window.scrollY >= sticky) {
       navSticky.classList.add('nav-sticky');
     } else {
@@ -16,17 +12,19 @@ const StickySliderNav = () => {
     }
 
     const changeLinkState = () => {
-      let index = slider.length;
-
-      while (index-- && window.scrollY + 50 < slider[index].offsetTop) {
-        //console.log(index)
+      for (let i = sliders.length - 1; i >= 0; i--) {
+        if (window.scrollY + 50 >= sliders[i].offsetTop) {
+          navTabs.forEach((tab) => tab.classList.remove('nav-tab-active'));
+          navTabs[i].classList.add('nav-tab-active');
+          break;
+        }
       }
-
-      navTabs.forEach((navTab) => navTab.classList.remove('nav-tab-active'));
-      navTabs[index].classList.add('nav-tab-active');
     };
+
     changeLinkState();
   };
+
+  window.addEventListener('scroll', navStickyHandler);
 };
 
 export default StickySliderNav;
