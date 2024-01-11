@@ -1,18 +1,40 @@
-# Portfolio
+<h1>Welcome to portfolio 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-2.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/joellesenne/portfolio#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/joellesenne/portfolio/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/joellesenne/portfolio/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/joellesenne/cv.joellesenne.dev" />
+  </a>
+  <a href="https://twitter.com/joellesenne" target="_blank">
+    <img alt="Twitter: joellesenne" src="https://img.shields.io/twitter/follow/joellesenne.svg?style=social" />
+  </a>
+</p>
 
-Creative Web Developer
+> Creative Web Developer
 
-## Getting Started
+**Table of Contents**
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+- [Prerequisites](#prerequisites)
+- [Install](#install)
+- [Usage](#usage)
+- [Author](#author)
+- [🤝 Contributing](#-contributing)
+- [Show your support](#show-your-support)
+- [📝 License](#-license)
+- [Acknowledgments](#acknowledgments)
 
 ### Prerequisites
 
 This project requires [node](https://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
 
-You can learn more in the [Guide](https://vitejs.dev/guide/).
+New this project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Installing
+### Install
 
 A step by step series of examples that tell you how to get a development environment running.
 
@@ -20,24 +42,30 @@ A step by step series of examples that tell you how to get a development environ
 # Clone this repository
 git clone  https://github.com/joellesenne/portfolio.git
 
-cd portfolio
+# Open IDE
+cd photos && code .
 
+#Or
+cd photos && webstorm .
+
+# Install with NPM
 npm install
 
-# OR
-pnpm install
-
-# OR
+# OR YARN
 yarn install
+
+# OR PNPM
+pnpm install
 ```
 
 ## Usage
 
 ```sh
-npm run dev
+# Run with react.js
+npm react-scripts start
 ```
 
-=> browse to [http://localhost:5173/](http://localhost:5173/)
+=> browse to [http://localhost:3000/](http://localhost:3000/)
 
 🎉 have fun
 
@@ -47,18 +75,15 @@ Add additional notes about how to deploy this on a live system.
 
 ## Built With
 
-- [Vite](https://vitejs.dev/) - Builder used
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+- [React](https://react.dev/) - Library used
 
 ## Authors
 
 👤 **Joël Lesenne**
 
 - Website: https://joellesenne.dev
-- Twitter: [@joellesenne](https://twitter.com/joellesenne)
+- X (Twitter): [@joellesenne](https://twitter.com/joellesenne)
+- mastodon: [@joellesenne](https://mastodon.social/@joellesenne)
 - Github: [@joellesenne](https://github.com/joellesenne)
 - YouTube: [@joellesenne](https://youtube.com/@joellesenne)
 - LinkedIn: [@joellesenne](https://linkedin.com/in/joellesenne)
@@ -79,18 +104,22 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2023 [Joël Lesenne](https://github.com/joellesenne). <br />
+Copyright © 2024 [Joël Lesenne](https://github.com/joellesenne). <br />
 This project is [MIT](LICENSE) licensed.
 
 ## Acknowledgments
 
+- [React](https://react.dev/)
 - [Navigation PageDesign](https://codepen.io/Saramazal/pen/LYyywNb)
 - [Sticky slider nav](https://codepen.io/RicBocad/pen/XWzNyqP)
 - [Ettrics](https://codepen.io/ettrics)
-- [Particles.js](https://particles.js.org/)
 - [Fancy border radius](https://github.com/9elements/fancy-border-radius)
 - [Min max calculator](https://github.com/9elements/min-max-calculator)
+- [Modern CSS For Dynamic Component-Based Architecture | Modern CSS Solutions](https://moderncss.dev/modern-css-for-dynamic-component-based-architecture/)
+- [A (more) Modern CSS Reset - Andy Bell](https://andy-bell.co.uk/a-more-modern-css-reset/)
 - [CSS Glitched Text](https://codepen.io/lbebber/pen/nqwBKK)
 - [CSS Dark Theme Toggle](https://codepen.io/probablykasper/pen/JjrYmqx?editors=1010)
 - [Practical CSS scroll snapping](https://css-tricks.com/practical-css-scroll-snapping/)
 - [Real favicon generator](https://realfavicongenerator.net/)
+- [ColorSpace](https://mycolor.space/)
+- [OKLCH Color Picker & Converter](https://oklch.com/#63.44,0.155,50.27,100)

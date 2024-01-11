@@ -1,0 +1,21 @@
+@layer theme {
+    :root {
+        color-scheme: inherit;
+        --hue: 240;
+        --color01: oklch(22.54% 0.026 var(--hue));
+        --color02: oklch(83.53% 0.16 var(--hue));
+        --color03: oklch(61.27% 0.245 calc(var(--hue) * 150));
+    }
+    html[data-theme='dark'] {
+        --color: oklch(93.87% 0.018 var(--hue));
+        --background-color: oklch(33.27% 0.2275776338240439 var(--hue));
+    }
+    html[data-theme='light'] {
+        --color: oklch(33.27% 0.2275776338240439 var(--hue));
+        --background-color: oklch(93.87% 0.018 var(--hue));
+    }
+    body {
+        color: var(--color);
+        background-color: var(--background-color);
+    }
+}

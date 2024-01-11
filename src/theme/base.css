@@ -1,0 +1,47 @@
+@layer base {
+    :root {
+        font-family: 'ROBOTO', sans-serif;
+        line-height: 1.15;
+        font-weight: 300;
+        font-synthesis: none;
+    }
+    html {
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        &:focus-within {scroll-behavior: smooth;}
+    }
+    body {
+        font-size: 2vw;
+        font-weight: 300;
+        background-image: url("../assets/images/cover.jpg");
+        background-blend-mode: soft-light;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    h1,
+    h2 {
+        font-family: 'Josefin Sans', sans-serif;
+        padding-bottom: 0.5rem;
+        font-size: clamp(1.5rem, 0.167rem + 6.67vw, 3.5rem);
+        letter-spacing: 0.5rem;
+    }
+    p {
+        font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+        line-height: 1.4;
+        letter-spacing: 0.4vw;
+        font-weight: 300;
+        z-index: 4;
+    }
+    a {
+        text-decoration: none;
+        color: var(--color02);
+    }
+    button {
+        margin-top: 2.5rem;
+        padding: 1.2rem;
+        border: none;
+        text-transform: none;
+        -webkit-appearance: button;
+    }
+}
