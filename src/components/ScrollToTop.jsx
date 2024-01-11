@@ -10,6 +10,8 @@ export  default function ScrollToTop() {
                     className="scroll"
                     onClick={useScrollToTop}
                     type="button"
+                    aria-label="Scroll to top"
+                    title="Scroll to top"
                 />
             )}
         </>
