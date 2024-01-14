@@ -43,10 +43,10 @@ A step by step series of examples that tell you how to get a development environ
 git clone  https://github.com/joellesenne/portfolio.git
 
 # Open IDE
-cd photos && code .
+cd portfolio && code .
 
 #Or
-cd photos && webstorm .
+cd portfolio && webstorm .
 
 # Install with NPM
 npm install
