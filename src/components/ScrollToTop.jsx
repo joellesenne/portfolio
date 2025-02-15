@@ -1,20 +1,17 @@
-import { useScrollToTop } from "../utils";
-import { UseScrollToTop } from "../hooks/UseScollToTop";
+import { useScrollToTop } from "../hooks/useScollToTop.jsx";
 
 export  default function ScrollToTop() {
-    const {isVisible} = UseScrollToTop();
+    const { isVisible, scrollToTop} = useScrollToTop(300);
     return (
         <>
-            {isVisible && (
-                <button
-                    className="scroll"
-                    onClick={useScrollToTop}
-                    type="button"
-                    aria-label="Scroll to top"
-                    title="Scroll to top"
-                />
-            )}
+            <button
+              className="scroll"
+              style={{ display: isVisible ? "block" : "none" }}
+              onClick={scrollToTop}
+              type="button"
+              aria-label="Scroll to top"
+              title="Scroll to top"
+            />
         </>
-
     )
 }

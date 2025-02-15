@@ -1,7 +1,7 @@
-import {UseToggleDarkMode} from "../hooks/UseToggleDarkMode";
+import {useToggleDarkMode} from "../hooks/useToggleDarkMode.jsx";
 
 export default function ToggleDarkMode() {
-    const {theme, handleToggleTheme} = UseToggleDarkMode()
+    const {theme, handleToggleTheme} = useToggleDarkMode()
 
     return (
         <button
